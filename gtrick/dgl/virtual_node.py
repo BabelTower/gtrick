@@ -32,7 +32,7 @@ class VirtualNode(nn.Module):
     """
 
     def __init__(self, in_feats, out_feats, dropout=0.5, residual=False):
-        super(VirtualNode).__init__()
+        super(VirtualNode, self).__init__()
         self.dropout = dropout
         # Add residual connection or not
         self.residual = residual
